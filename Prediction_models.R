@@ -20,8 +20,8 @@ library(corrplot)
 library(rstatix)
 
 ## load data
-setwd("L:/PRIV/EPHD_CRB/FACEFIT/DATA")
-measure_clust<-fread("Craniometrics Paper/Old and Misc/raw_scaled_measures_clusters_select.csv", header = TRUE, drop = 1)
+setwd("")
+measure_clust<-fread("", header = TRUE, drop = 1)
 
 measure_clust$k_clust<-as.factor(measure_clust$k_clust)
 
@@ -259,6 +259,6 @@ table(yhat.rf, measure_clust_test$k_clust)
 # colnames(measure_clust)[1:16]<-c("Subject","Bizygomatic.Breadth","Nose.Length","nose_gap_area","Neck.Circumference","Ear.Breadth",
 #                                  "Sex","Neck.Circumference_scale","Ear.Breadth_scale","Nose.Length_scale", "Bizygomatic.Breadth_scale",
 #                                  "nose_gap_area_scaled","Age_scale","Height_scale","Weight_scale", "BMI_scale")
-# #write.csv(measure_clust,"Craniometrics Paper/raw_scaled_measures_clusters_select.csv")
+# #write.csv(measure_clust,"")
 # 
 # measure_clust$k_cluster<-factor(measure_clust$k_cluster, labels = c("D","P","R","T"))
