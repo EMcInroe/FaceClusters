@@ -8,8 +8,6 @@
 ## This script uses penalized regression, boosting and best subset selection to find variables
 ## that will be used to crate clusters for the subjects, based on craniofacial measurements.
 ## The selected variables are then used in a PCA. 
-## This version does not remove the outliers for the clustering. Participant 42 is removed 
-## due to missing data. 
 ## 99 Participants
 ## Updates include changing the box and whisker plots.
 ################################################################################################
@@ -38,7 +36,7 @@ library(RColorBrewer)
 ## Craniometric Measurements
 ## Mask Performance (FFE)
 ###############################################################################
-setwd("O:/PRIV/CPHEA/PHITD/EPHD_CRB/FACEFIT/DATA")
+setwd("")
 
 demographics<-fread("R_scripts_input/demographics.csv")
 names(demographics)
