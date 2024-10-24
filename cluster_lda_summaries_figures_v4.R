@@ -5,7 +5,7 @@
 ## Melissa McInroe
 ## Updated February 2, 2024 
 ##
-## This script continues from  "L:\PRIV\EPHD_CRB\FACEFIT\DATA\Craniometrics Paper\PCA_cluster_selectvars_v2.R"
+## This script continues from  ""
 ## to create plots and summmaries of the data.  
 ## 99 Participants
 ## Data Input
@@ -39,7 +39,7 @@ library(gridExtra)
 ## Craniometric Measurements
 ## Mask Performance (FFE)
 ###############################################################################
-setwd("L:/PRIV/EPHD_CRB/FACEFIT/DATA")
+setwd("")
 
 demographics<-fread("R_scripts_input/demographics.csv")
 names(demographics)
