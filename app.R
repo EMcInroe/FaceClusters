@@ -24,7 +24,7 @@ library(MASS)
 options(tigris_class = "sf")
 options(tigris_use_cache = TRUE)
 
-setwd("O:/PRIV/CPHEA/PHITD/EPHD_CRB/FACEFIT/DATA")
+setwd("")
 measurements<-fread("PythonOutput/total_table_8-14-2023.csv")
 #measurements<-fread("www/total_table_8-14-2023.csv")
 names(measurements)
